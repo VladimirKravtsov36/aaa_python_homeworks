@@ -8,9 +8,9 @@ class CountVectorizer:
         for doc in corpus:
             self._vocabulary.update(doc.lower().split())
 
-        termdoc_matr = [[0 for i in self._vocabulary] for j in corpus]
+        termdoc_matr = [[0 for _ in self._vocabulary] for _ in corpus]
         
-        for i, doc in enumerate(corpus):    
+        for i, doc in enumerate(corpus):  
             for j, feature in enumerate(self._vocabulary):
                 termdoc_matr[i][j] = doc.lower().split().count(feature)
 
