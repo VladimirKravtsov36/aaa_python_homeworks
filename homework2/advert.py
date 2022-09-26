@@ -78,8 +78,8 @@ if __name__ == '__main__':
         "class": "dogs",
         "location": {
         "address": "сельское поселение Ельдигинское, поселок санатория \
-        Тишково, 25"
-            }
+Тишково, 25"
+        }
         }"""
 
     corgy = json.loads(corgy_str)
@@ -87,5 +87,5 @@ if __name__ == '__main__':
 
     print(corgy_ad)
     print(corgy_ad.price)
-    print(lesson_ad.class_)
-    print(lesson_ad.location)
+    print(corgy_ad.class_)
+    print(corgy_ad.location)
