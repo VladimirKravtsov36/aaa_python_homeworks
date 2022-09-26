@@ -1,9 +1,12 @@
+from typing import List
+
+
 class CountVectorizer:
 
     def __init__(self):
         self._vocabulary = set()
 
-    def fit_transform(self, corpus):
+    def fit_transform(self, corpus: List[str]) -> List[List[int]]:
 
         for doc in corpus:
             self._vocabulary.update(doc.lower().split())
@@ -16,10 +19,11 @@ class CountVectorizer:
 
         return termdoc_matr
 
-    def get_feature_names(self):
+    def get_feature_names(self) -> List[str]:
         return list(self._vocabulary)
 
-if __name__ == 'main':
+
+if __name__ == '__main__':
 
     corpus = [
         'Crock Pot Pasta Never boil pasta again',
