@@ -1,0 +1,11 @@
+test_empty (test_ohe_unit.TestOhe) ... ok
+test_many_args (test_ohe_unit.TestOhe) ... ok
+test_no_args (test_ohe_unit.TestOhe) ... ok
+test_one_arg (test_ohe_unit.TestOhe) ... ok
+test_same_args (test_ohe_unit.TestOhe) ... ok
+test_unique_args (test_ohe_unit.TestOhe) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK
